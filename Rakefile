@@ -56,10 +56,11 @@ Motion::Project::App.setup do |app|
   app.weak_frameworks += []
   app.libs += []
 
-=begin
+
   app.pods do
+    pod 'HatenaBookmarkSDK', :git => 'git@github.com:hatena/Hatena-Bookmark-iOS-SDK.git'
   end
-=end
+
 
   app.development do
     #app.entitlements['aps-environment'] = 'development'

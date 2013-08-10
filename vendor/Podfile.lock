@@ -1,0 +1,20 @@
+PODS:
+  - AFNetworking (1.3.2)
+  - HatenaBookmarkSDK (0.1):
+    - AFNetworking (~> 1.0)
+    - SFHFKeychainUtils
+  - SFHFKeychainUtils (0.0.1)
+
+DEPENDENCIES:
+  - HatenaBookmarkSDK (from `git@github.com:hatena/Hatena-Bookmark-iOS-SDK.git`)
+
+EXTERNAL SOURCES:
+  HatenaBookmarkSDK:
+    :git: git@github.com:hatena/Hatena-Bookmark-iOS-SDK.git
+
+SPEC CHECKSUMS:
+  AFNetworking: 7f9bcd7c287a75476cd5c61e82fd3380e93e4c54
+  HatenaBookmarkSDK: 09575565bef934a9520a96ecb83b1817e17ebf40
+  SFHFKeychainUtils: e828dbd9eaa509486acf95d8de2ebd414c4b7451
+
+COCOAPODS: 0.23.0
