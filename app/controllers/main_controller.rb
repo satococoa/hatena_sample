@@ -1,9 +1,16 @@
 class MainController < UIViewController
+  DEFAULT_URL = 'https://www.google.com/'
+
+  def loadView
+    self.view = UIWebView.new
+  end
+
   def viewDidLoad
+    view.backgroundColor = UIColor.whiteColor
     initialize_hatena_bookmark_client
 
     if HTBHatenaBookmarkManager.sharedManager.authorized
-      # TODO: ログイン済みの動作をここに
+      open_web_view
     else
       login
     end
@@ -28,12 +35,18 @@ class MainController < UIViewController
   def login
     HTBHatenaBookmarkManager.sharedManager.authorizeWithSuccess(
         lambda {
-          puts 'success'
+          open_web_view
         },
         failure: lambda {|error|
           puts error.localizedDescription
         }
     )
+  end
+
+  def open_web_view
+    url = NSURL.URLWithString(DEFAULT_URL)
+    request = NSURLRequest.requestWithURL(url)
+    view.loadRequest(request)
   end
 
   def show_oauth_login_view(request)
