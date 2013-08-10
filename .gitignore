@@ -1,0 +1,14 @@
+.repl_history
+build
+resources/*.nib
+resources/*.momd
+resources/*.storyboardc
+vendor/bundle
+vendor/Pods
+.bundle
+config.yml
+testflight_launcher.rb
+trace.d
+debugger_cmds
+.idea
+.dat*

@@ -1,0 +1,23 @@
+identifier: com.example.*
+
+testflight:
+  api_token: API_TOKEN
+  team_token: TEAM_TOKEN
+  distribution_lists:
+    - testers
+
+pixate:
+  user:
+  key:
+
+development:
+  certificate: 'iPhone Developer: Foo Bar (AAAA1234)'
+  provisioning: '/path/to/development.mobileprovision'
+
+adhoc:
+  certificate: 'iPhone Distribution: Foo Bar'
+  provisioning: '/path/to/adhoc.mobileprovision'
+
+release:
+  certificate: 'iPhone Distribution: Foo Bar'
+  provisioning: '/path/to/release.mobileprovision'
