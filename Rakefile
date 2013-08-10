@@ -59,6 +59,7 @@ Motion::Project::App.setup do |app|
 
   app.pods do
     pod 'HatenaBookmarkSDK', :git => 'git@github.com:hatena/Hatena-Bookmark-iOS-SDK.git'
+    pod 'SVWebViewController'
   end
 
 

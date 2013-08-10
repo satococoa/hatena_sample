@@ -4,9 +4,11 @@ PODS:
     - AFNetworking (~> 1.0)
     - SFHFKeychainUtils
   - SFHFKeychainUtils (0.0.1)
+  - SVWebViewController (0.1)
 
 DEPENDENCIES:
   - HatenaBookmarkSDK (from `git@github.com:hatena/Hatena-Bookmark-iOS-SDK.git`)
+  - SVWebViewController
 
 EXTERNAL SOURCES:
   HatenaBookmarkSDK:
@@ -16,5 +18,6 @@ SPEC CHECKSUMS:
   AFNetworking: 7f9bcd7c287a75476cd5c61e82fd3380e93e4c54
   HatenaBookmarkSDK: 09575565bef934a9520a96ecb83b1817e17ebf40
   SFHFKeychainUtils: e828dbd9eaa509486acf95d8de2ebd414c4b7451
+  SVWebViewController: 2e3a367237bb7072e54e05c6eaa82d21a12ba676
 
 COCOAPODS: 0.23.0
