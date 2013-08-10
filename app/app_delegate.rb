@@ -1,6 +1,7 @@
 class AppDelegate
   def application(application, didFinishLaunchingWithOptions:launchOptions)
     @window = UIWindow.alloc.initWithFrame(App.bounds)
+    @window.rootViewController = MainController.new
     @window.makeKeyAndVisible
     true
   end
